@@ -1,6 +1,6 @@
 package com.qidian.mall.design.mode.proxy.dynamic1.cglib;
 
-import com.example.design.Dynamic.jdk.Rent;
+
 import net.sf.cglib.proxy.Enhancer;
 
 import java.lang.reflect.Proxy;
