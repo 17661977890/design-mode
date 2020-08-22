@@ -20,6 +20,11 @@ public class SendMsgStrategyBeans  {
 
     /**
      * applicationContext.getBeansOfType(Strategy.class).values() 获取所有实现策略接口得 具体策略类 ，后续使用stream 将其转为map 并赋值
+     *
+     * list.stream().collect(Collectors.toMap(Option::getId, option -> option, (v1, v2) -> v1));
+     * 第一个参数Option::getId 表示选择Option的getId作为map的key值；
+     * 第二个参数option -> option表示选择将原来的对象作为map的value值；
+     * 第三个参数(v1, v2) -> v1中，如果v1与v2的key值相同，选择v1作为那个key所对应的value值
      */
     @PostConstruct
     private void SendMsgStrategyInit(){
