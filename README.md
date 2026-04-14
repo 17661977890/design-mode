@@ -2,3 +2,5 @@
 # 23 GOF 设计模式篇
 
 测试cherry pick 1
+
+测试cherry pick 2
